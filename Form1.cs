@@ -81,7 +81,7 @@ namespace Code_Practice_Linear_Search
         // Part 3: Display All CSI student
         // Create a method that takes a List<Student> and returns a List<Student>
         // Write a method that loops through a list of students. Return a list of students who are a part of the CSI program
-
+        // use "CSI" for the search
 
         private void btnCSI_Click(object sender, EventArgs e)
         {
