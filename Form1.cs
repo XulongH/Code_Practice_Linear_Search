@@ -45,7 +45,17 @@ namespace Code_Practice_Linear_Search
 
         // Write Code Below
         // bool Contains(string name, List<Student> list)
-
+        public bool LinearSearch(string name, List<Student> list)
+        {
+            foreach (Student student in list)
+            {
+                if(student.Name == name)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
 
 
@@ -73,7 +83,19 @@ namespace Code_Practice_Linear_Search
 
         // Write Code Below
         // int FindByIndex(string name, List<Student> list)
+        public int FindIndex(string name, List<Student> list)
+        {
+            for(int i = 0; i < list.Count; i++)
+            {
+                string name = list[i].Name;
 
+                if(name == name)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
 
         //-----------------------------------------------------------------
@@ -93,7 +115,25 @@ namespace Code_Practice_Linear_Search
 
         // Write Code Below
         // List<Student> FindCSI(List<Student> students)
+        public Student FindCSI(string Program, List<Student> students)
+        {
+            string Program = CSI;
+            foreach (Student student in students)
+            {
+                
+                string studentProgram = student.Program;
 
+                
+                if (studentProgram == CSI)
+                {
+                    
+                    return student;
+                }
+            }
+
+            return null; 
+        }
+    }
 
 
 
@@ -124,7 +164,23 @@ namespace Code_Practice_Linear_Search
 
         // Write Code Below
         // List<Student> FindStudentsWithGrades(int low, int high, List<Student> students)
+        public List<Student> FindStudentsWithGrades(int low, int high, List<Student> students)
+        {
+            
+            foreach (Student student in students)
+            {
+                
+                int low = 40;
+                int high  = 80;
+                int studentGrade = student.Grade;
 
+                if (studentGrade == low && high)
+                {
+                    return students;
+                }
+            }
+            return null;
+        }
 
 
 
@@ -201,9 +257,13 @@ namespace Code_Practice_Linear_Search
         }
 
 
+
         #endregion
 
- 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     } // class
 
 } // namespace
